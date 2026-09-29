@@ -21,7 +21,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Builder
 @ToString
-public class employee {
+public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
