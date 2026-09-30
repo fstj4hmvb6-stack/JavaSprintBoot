@@ -11,7 +11,6 @@ import java.util.Optional;
 @RequestMapping("/employees")
 public class EmployeeController {
 
-    @Autowired
     private EmployeeService service;
 
     // CREATE a new employee
