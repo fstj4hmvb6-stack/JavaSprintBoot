@@ -2,19 +2,15 @@ package com.expert10.dkl.entity;
 
 import jakarta.persistence.*;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+@Data
 @Entity
-@Table(name = "employees")
+@Table(name = "employee")
 @Getter
 @Setter
 @NoArgsConstructor
