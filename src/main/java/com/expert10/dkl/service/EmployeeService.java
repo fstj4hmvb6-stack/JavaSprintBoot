@@ -13,7 +13,7 @@ public class EmployeeService {
 
     private final EmployeeRepository repository; /* The repository can not be changed after its creation*/
 
-@Autowired
+@Autowired /* Here it allows Spring to create and gives automatically what it needs in an EmployeeRep*/
 
     public EmployeeService(EmployeeRepository repository) {
         this.repository = repository;
