@@ -2,15 +2,18 @@ package com.expert10.dkl.service;
 
 import com.expert10.dkl.entity.Employee;
 import com.expert10.dkl.repository.EmployeeRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-@Service /* c est juste pour dire a Spring que ca contient la logique metier*/
+@Service /* c est juste pour dire a Spring que ca contain la logic work*/
 public class EmployeeService {
 
-    private final EmployeeRepository repository;
+    private final EmployeeRepository repository; /* The repository can not be changed after its creation*/
+
+@Autowired
 
     public EmployeeService(EmployeeRepository repository) {
         this.repository = repository;
