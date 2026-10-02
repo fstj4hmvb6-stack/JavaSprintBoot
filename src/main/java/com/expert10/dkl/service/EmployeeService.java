@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+@Service /* c est juste pour dire a Spring que ca contient la logique metier*/
 public class EmployeeService {
 
     private final EmployeeRepository repository;
