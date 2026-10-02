@@ -2,6 +2,7 @@ package com.expert10.dkl.controller;
 
 import com.expert10.dkl.entity.Employee;
 import com.expert10.dkl.service.EmployeeService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,9 +10,10 @@ import java.util.List;
 import java.util.Optional;
 @RestController
 @RequestMapping("/employees")
+@RequiredArgsConstructor
 public class EmployeeController {
 
-    private EmployeeService service;
+    private final EmployeeService service;
 
     // CREATE a new employee
     @PostMapping("/add")
