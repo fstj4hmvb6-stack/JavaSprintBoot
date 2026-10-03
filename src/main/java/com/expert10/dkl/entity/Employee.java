@@ -27,7 +27,7 @@ public class Employee {
     // Personal Information
 
 
-    @Column(nullable = false, length = 40)
+    @Column(nullable = false, length = 50)
     private String firstName;
 
     @Column(nullable = false, length = 50)
